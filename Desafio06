@@ -1,1 +1,6 @@
 
+n1 = int(input("Digite um valor: "))
+d = n1**2
+t = n1**3
+r = n1**0.5
+print("O doblo é: {}\nO triplo é: {}\nRaiz quadrada: {:.0f}".format(d, t, r))
