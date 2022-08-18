@@ -1,0 +1,15 @@
+import random
+print("=== Bem vindo ao desafio de acertar o número ===")
+print("\nREGRAS:\n1)Digite um número de 0 a 5\n2)Se divirta!")
+
+nsorteado = random.randint(0,5)
+nescolhido = int(input("\n\nDigite um número: "))
+
+if nescolhido == nsorteado:
+  print("\nNúmero sorteado: {}".format(nsorteado))
+  print("Você acertoooooou. Parabensss!")
+else:
+  print("\nNúmero sorteado: {}".format(nsorteado))
+  print("Você errouuu. Tente novamente!")
+
+print("\n=== FIM ===")
