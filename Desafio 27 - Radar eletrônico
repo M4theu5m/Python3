@@ -3,7 +3,7 @@ print("=== RADAR ELETRÔNICO ===")
 print("\n")
 vel = int(input("Digite a velocidade que você passou no radar(APENAS NÚMERO): "))
 os.system("clear")
-if vel >= 80:
+if vel > 80:
   print("\n-- VELOCIDADE MÁXIMA: 80Km/h --\nVocê ultrapassou a velocidade máxima, passou com {}Km/h".format(vel))
   multadiv = vel - 80
   multa = multadiv*7
