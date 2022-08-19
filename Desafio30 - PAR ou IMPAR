@@ -1,0 +1,9 @@
+print("=== PAR OU IMPAR ===")
+n1 = int(input("\nDigite um número inteiro: "))
+resto = n1 % 2
+if resto == 0:
+  print("\nO seu número {} é PAR".format(n1))
+else:
+  print("\nO seu número {} é IMPAR".format(n1))
+
+print("=== FIM ===")
