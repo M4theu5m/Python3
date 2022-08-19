@@ -1,0 +1,10 @@
+print("=== PREÇO DA VIAGEM ===\n")
+dist = int(input("Digite a distância da cidade, onde você vai viajar(EM KM): "))
+preco1 = dist*0.50
+preco2 = dist*0.45
+if dist <= 200:
+  print("O preço da passagem é {} R$".format(preco1))
+else:
+  print("O preço da passagem é {} RS".format(preco2))
+
+print("=== FIM ===")
