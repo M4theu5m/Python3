@@ -1,0 +1,17 @@
+print("\033[31m=== BASE DE CONVERSÃO ===\033[m\n")
+num = int(input("Digite um número: "))
+print("\nEscolha uma opção")
+escolha = int(input("\n\033[33m1 Binário\n2 Octal\n3 Hexadecimal\033[m\n-> "))
+if escolha == 1:
+  print("\nSeu número {} em forma Binária é {}".format(num, bin(num)))
+
+elif escolha == 2:
+  print("\nSeu número {} em forma Octal é {}".format(num, oct(num)))
+
+elif escolha == 3:
+  print("\nSeu número {} em forma Exadecimal é {}".format(num, hex(num)))
+
+else:
+  print("\nNão existe essa opção ainda, aguarde atualizações!")
+
+print("\n\033[31m=== FIM ===\033[m")
