@@ -1,0 +1,13 @@
+print("\n\033[31m=== COMPARAÇÕES DE NÚMEROS ===\033[m")
+num1 = int(input("\nPrimeiro valor: "))
+num2 = int(input("Segundo valor: "))
+if num1 > num2:
+  print("\nO Número {} é \033[34mMAIOR\033[m que {}".format(num1, num2))
+
+elif num2 > num1:
+  print("\nO número {} é \033[35mMAIOR\033[m que {}".format(num2, num1))
+
+else:
+  print("\nAmbos valores são \033[36mIGUAIS\033[m!")
+
+print("\n=== FIM ===")
