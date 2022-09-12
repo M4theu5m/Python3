@@ -1,0 +1,12 @@
+#Crie um programa que leia uma frase qualquer e diga se ela é um palíndromo, desconsiderando os espaços.
+
+print("\033[35m=== Desafio 53 ===\033[m\n")
+frase = str(input("Digite uma frase: ")).upper().replace(" ","")
+frase1 = frase[::-1]
+if frase == frase1:
+  print("\nA frase {} inversa fica {}, temos um palíndromo!".format(frase, frase1))
+
+else:
+  print("\nA frase {} inversa fica {}, não temos um palíndromo!".format(frase, frase1))
+
+print("\n\033[35m=== Encerrando o programa ===\033[m")
