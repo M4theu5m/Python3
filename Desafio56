@@ -1,0 +1,32 @@
+#Desenvolva um programa que leia o nome, idade e sexo de 4 pessoas. No final do programa, mostre: a média de idade do grupo, qual é o nome do homem mais velho e quantas mulheres têm menos de 20 anos.
+
+print("\033[35m=== Desafio 56 ===\033[m\n")
+
+media = 0
+idadeM = 0
+idadeB = 0
+qtdF = 0
+
+for c in range(1, 5):
+  print("{:-^5} {}º Pessoa {:-^5}".format('-', c, '-'))
+  nome = str(input("Nome: ")).strip()
+  idade = int(input("Idade: "))
+  sexo = str(input("sexo[M/F]: ")).upper()
+  print("\n")
+  media = media + idade
+  if c == 1 and sexo == 'M':
+    idadeM = idade
+    nomeM = nome
+  elif idadeM <= idade and sexo == 'M':
+    idadeM = idade
+    nomeM = nome
+  else:
+    if idade < 20 and sexo == 'F':
+      qtdF += 1
+
+media = media/c
+print("1. A média de idade do grupo é: {}".format(media))
+print("2. O homem mais velho do grupo é {} com {} anos".format(nomeM, idadeM))
+print("3. A quantidade de mulheres do grupo que tem menos de 20 anos: {}".format(qtdF))
+
+print("\n\033[35m=== Encerrando programa ===\033[m")
