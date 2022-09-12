@@ -1,0 +1,22 @@
+#Faça um programa que leia o peso de cinco pessoas. No final, mostre qual foi o maior e o menor peso lidos.
+
+print("\033[35m=== Desafio 55 ===\033[m\n")
+
+import random
+
+pesoMenor = 300.00
+pesoMaior = 0
+
+for c  in range (1, 10):
+  peso = random.uniform(0.00, 220.0)
+  print("{:.2f}".format(peso), end=" ")
+  if pesoMenor >= peso:
+    pesoMenor = peso
+
+  elif pesoMaior <= peso:
+    pesoMaior = peso
+
+print("\n\nO maior peso lido foi: {:.2f}".format(pesoMaior))
+print("\nO menos peso lido foi {:.2f}".format(pesoMenor))
+
+print("\n\033[35m=== Programa encerrado ===\033[m")
